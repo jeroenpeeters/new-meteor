@@ -15,7 +15,7 @@ newMeteor.init server, methods
 app.use newMeteor.express
 app.use express.static 'public'
 
-app.get '/hello', (req, res) ->
-  res.send 'hello'
+app.get '/some-other-page', (req, res) ->
+  res.send '<h1>Some static page</h1>'
 
 server.listen 4000
