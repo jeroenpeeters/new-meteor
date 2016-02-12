@@ -7,5 +7,11 @@
   </head>
   <body>
     <h1>Test</h1>
+    <script>
+      NM.client(function*(){
+        x = yield this.call('hello')
+        console.log('x=',x);
+      });
+    </script>
   </body>
 </html>

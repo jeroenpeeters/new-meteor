@@ -2,9 +2,13 @@ http      = require 'http'
 express   = require 'express'
 app       = express()
 newMeteor = require './lib/newMeteor'
-
 server = http.createServer app
-newMeteor.init server
+
+methods =
+  hello: (arg1, arg2) -> 'world'
+
+newMeteor.init server, methods
+
 
 app.use newMeteor.express
 app.use express.static 'public'
