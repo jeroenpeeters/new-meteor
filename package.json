@@ -10,13 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^13.0.0",
+    "co": "^4.6.0",
     "coffee-script": "^1.10.0",
     "coffeeify": "^2.0.1",
     "express": "^4.13.4",
     "koa": "^1.1.2",
     "lodash": "^4.3.0",
+    "minimongo": "^3.8.0",
+    "setimmediate": "^1.0.4",
     "sha1": "^1.1.1",
     "socket.io": "^1.4.5",
-    "socket.io-client": "^1.4.5"
+    "socket.io-client": "^1.4.5",
+    "uuid": "^2.0.1",
+    "vo": "^1.0.3"
   }
 }

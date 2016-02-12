@@ -6,11 +6,15 @@
     <script src="newMeteor.js"></script>
   </head>
   <body>
-    <h1>Test</h1>
+    <h1>Test2</h1>
     <script>
-      NM.client(function*(){
+      NM.client(function *(){
         x = yield this.call('hello')
-        console.log('x=',x);
+        y = yield this.call('hello')
+        console.log('x,y=',x, y);
+      });
+      NM.call('hello')(function(err, res){
+        console.log('async', res);
       });
     </script>
   </body>

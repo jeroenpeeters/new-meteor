@@ -4,8 +4,10 @@ app       = express()
 newMeteor = require './lib/newMeteor'
 server = http.createServer app
 
+x = 0
 methods =
-  hello: (arg1, arg2) -> 'world'
+  hello: (arg1, arg2) ->
+    x = x + 1
 
 newMeteor.init server, methods
 
