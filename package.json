@@ -16,7 +16,6 @@
     "express": "^4.13.4",
     "koa": "^1.1.2",
     "lodash": "^4.3.0",
-    "minimongo": "^3.8.0",
     "setimmediate": "^1.0.4",
     "sha1": "^1.1.1",
     "socket.io": "^1.4.5",
